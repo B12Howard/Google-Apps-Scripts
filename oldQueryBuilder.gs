@@ -1,5 +1,5 @@
 
-  function main() {
+function mainQueryEntry() {
   if(messageType == "") {
     var mData = {
       nickName: messageName,
@@ -44,6 +44,7 @@
     return;
   }
 }
+
 // Create copy of data souces into Search Storagen Hidden Sheet. This reformats mixed data from Message Log into text for query matching
 function copyMLtoHidden() {
   var hiddenSS = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Search Storage Hidden");
@@ -191,7 +192,6 @@ function buildDataSources2(checks) {
     return finalsourceString;
   }
 }
-
 
 function buildDataSources3(checks) {
   var sourceStringStart = "{";
